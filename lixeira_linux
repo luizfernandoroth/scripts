@@ -1,2 +1,12 @@
 alias rm="jogar_na_lixeira
-jogar_na_lixeira() {     local backup_dir="/home/$SUDO_USER/Lixeira";     mkdir -p "$backup_dir";     for file in "$@"; do         if [ -e "$file" ]; then             mv --backup=numbered -t "$backup_dir" "$file";         else             echo "Não é possível mover diretórios.";         fi;     done; }
+jogar_na_lixeira() {
+local backup_dir="/home/$SUDO_USER/Lixeira";  
+mkdir -p "$backup_dir";
+for file in "$@"; do
+if [ -e "$file" ]; then
+mv --backup=numbered -t "$backup_dir" "$file";
+else
+echo "Não é possível mover diretórios.";
+fi;
+done;
+}
