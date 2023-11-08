@@ -1,4 +1,5 @@
-alias rm="jogar_na_lixeira"
+alias RM='rm -ir'   
+alias rm='jogar_na_lixeira'
 jogar_na_lixeira() {
 local backup_dir="/home/$SUDO_USER/Lixeira";  
 mkdir -p "$backup_dir";
