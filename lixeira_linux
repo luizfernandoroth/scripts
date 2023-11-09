@@ -1,4 +1,4 @@
-alias RM='rm -r'   
+alias del='/usr/bin/rm -rf' 
 alias rm='jogar_na_lixeira'
 jogar_na_lixeira() {
 local backup_dir="/home/$SUDO_USER/Lixeira";  
